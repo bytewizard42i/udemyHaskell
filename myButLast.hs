@@ -13,12 +13,10 @@ xs = [3,5,7] (tail of the list)
 -}
 
 {- ----------------------------------------------------------------- -}
-
-{- 
-1st variation of the function
+ 
+-- 1st variation of the function
 -}
-
-myButLast2 :: [b] -> b
+--  myButLast2 :: [b] -> b
 
 {-
 myButLast2 [] = error "Empty List"    --throws an error if the list is empty
@@ -31,4 +29,7 @@ Tail of Reverse L = [8,2,6]  (t)
 Head of Tail of Reverse L = 8 (h)
 -}
 
-myButLast2 = head . tail . reverse   --  because => h(t(r(x)))
+
+myButLast2 :: [a] -> a
+myButLast2 = head . tail . reverse   --  because => h(t(r(x)))  
+-- . . are f(x) composition
