@@ -23,6 +23,12 @@ myButLast2 :: [b] -> b
 {-
 myButLast2 [] = error "Empty List"    --throws an error if the list is empty
 myButLast2 [b] = error "Single Element List"
+
+Reverse -> tail -> head
+L = [6,2,8,5]
+Reverse L = [5,8,2,6]   (r)
+Tail of Reverse L = [8,2,6]  (t)
+Head of Tail of Reverse L = 8 (h)
 -}
 
 myButLast2 = head . tail . reverse   --  because => h(t(r(x)))
