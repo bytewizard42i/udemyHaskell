@@ -25,4 +25,4 @@ myButLast2 [] = error "Empty List"    --throws an error if the list is empty
 myButLast2 [b] = error "Single Element List"
 -}
 
-myButLast2 = head . tail . reverse
+myButLast2 = head . tail . reverse   --  because => h(t(r(x)))
