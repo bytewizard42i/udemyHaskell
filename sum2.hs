@@ -1,8 +1,8 @@
-sum' :: [Int] -> String
-sum' [] = show 0
-sum' [7] = "Wow, you found the secret number, which is 7!" 
-sum' [x] = show x
-sum' (x:xs) = show (x + sum xs)
+summ :: [Int] -> Int
+summ [] = 0
+summ [7] = "Wow, you found the secret number, which is " ++ 7 ++ "!"
+summ [x] = x
+summ (x:xs) = x + summ xs
 
 {-
 Steps for completing recursive f(x)
