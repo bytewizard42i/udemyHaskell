@@ -1,6 +1,6 @@
 summ :: [Int] -> Int
 summ [] = 0
-summ [7] = "Wow, you found the secret number, which is " ++ 7 ++ "!"
+summ [7] = 7 
 summ [x] = x
 summ (x:xs) = x + summ xs
 
