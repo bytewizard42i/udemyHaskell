@@ -5,7 +5,7 @@ sum [x] = x
 
 {-
 Steps for completing recursive f(x)
-*1. White down the type signature. This will help to defin the
+*1. Write down the type signature. This will help to defin the
 function and its arguments later.
 *2. Enumerate the possible cases you could have based on its inputs
 *3. Between all the previously instanciated cases, identify which are the 
