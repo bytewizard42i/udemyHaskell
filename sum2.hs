@@ -1,7 +1,7 @@
-summ :: [Int] -> Int
-summ [] = 0
-summ [7] = 7 
-summ [x] = x
+summ :: [Int] -> (Int, String)
+summ [] = (0, "Empty list")
+summ [7] = (7 , "You found the magic number!")
+summ [x] = (x, "Single element list")
 summ (x:xs) = x + summ xs
 
 {-
